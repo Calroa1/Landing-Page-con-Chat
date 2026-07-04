@@ -4,6 +4,8 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/Header' // <-- tu Header mejorado
 import Footer from '@/components/Footer' // <-- crearemos uno abajo
+import BotonWhatsApp from '@/components/BotonWhatsApp' // <-- botón flotante de WhatsApp
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -51,6 +53,10 @@ export default function RootLayout({
 
         {/* Footer */}
         <Footer />
+
+        <BotonWhatsApp />
+
+
       </body>
     </html>
   )
